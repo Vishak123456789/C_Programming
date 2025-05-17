@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int roll[5], marks[5], total[5];
+    printf("Enter roll number and marks for 5 students:\n");
+
+    for (int i = 0; i < 5; i++) {
+        printf("Student %d:\n", i + 1);
+        printf("Roll No: "); scanf("%d", &roll[i]);
+        printf("Marks: "); scanf("%d", &marks[i]);
+        total[i] = marks[i]; // Only 1 subject, so total = marks
+    }
+
+    printf("\nMarksheet:\nRoll No\tMarks\tTotal\n");
+    for (int i = 0; i < 5; i++) {
+        printf("%d\t%d\t%d\n", roll[i], marks[i], total[i]);
+    }
+    return 0;
+}
