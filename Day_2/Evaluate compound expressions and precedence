@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int a = 10, b = 5, c = 2, result;
+    result = a + b * c;  // * has higher precedence than +
+    printf("Result of a + b * c = %d\n", result);
+    result = (a + b) * c;  // parentheses change order
+    printf("Result of (a + b) * c = %d\n", result);
+    return 0;
+}
