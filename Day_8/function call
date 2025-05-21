@@ -1,20 +1,20 @@
 #include <stdio.h>
 void csa()
 {
-    printf("\ni am in csa fun");
+    printf("\ni am in csa function");
     it();
-    printf("\ni am in it fun");
+    printf("\ni am in it function");
     
 }
 void it()
 {
-    printf("\ni am in it fun");
+    printf("\ni am in it function");
 }
 int main()
 {
-    printf("\n i am in main fun");
+    printf("\n i am in main function");
     csa();
-    printf("i am back to main fun");
+    printf("i am back to main function");
 
     return 0;
 }
